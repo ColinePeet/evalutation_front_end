@@ -1,0 +1,215 @@
+section{
+    text-align: center;
+    padding: 80px 0;
+    h2{
+        font-size: 2.2em;
+        margin-bottom: 0;
+    }
+    p{
+        font-size: 0.9em;
+        color: rgb(148, 148, 148);
+    }
+    .flex-3-contenu{
+        margin-top: 80px;
+        columns: 3;
+        column-gap: 30px;
+        div{
+           break-inside: avoid; 
+           overflow: hidden;
+        }
+    }
+    .flex-2-contenu{
+        margin-top: 80px;
+        columns: 2;
+        column-gap: 30px;
+        div{
+           break-inside: avoid; 
+           overflow: hidden;
+        }
+    }
+    .flex-4-contenu{
+        margin-top: 80px;
+        columns: 4;
+        column-gap: 30px;
+        text-align: left;
+        div{
+           break-inside: avoid; 
+           overflow: hidden;
+            .bg-scale{
+                overflow: hidden;
+                img{
+                    transition: .3s all ease-in-out;
+                }
+            }
+            h3{
+                transition: .3s all ease-in-out;
+                color: black;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.08) rotate(-3deg);
+                }
+                h3{
+                    color: #f8b600;
+                }
+            }
+        } 
+    }
+}
+
+// section testimonial
+.testimonial-section{
+    background-color: #f9f9ff;
+    .flex-2-contenu{
+        .comments-bloc{
+            background: white;
+            display: flex;
+            text-align: left;
+            padding: 30px;
+            .user-img{
+                width: 35px;
+                height: 35px;
+                img{
+                    width: 100%;
+                }
+            }
+            .txt{
+                width: 70%;
+                margin-left: 30px;
+                p{
+                    margin: 0;
+                    line-height: 1.4em;
+                }
+                .stars{
+                    color: grey;
+                    font-size: 0.8em;
+                }
+                .yellow{
+                    color: #f8b600;
+                }
+            }
+        }
+    }
+}
+
+// 
+article{
+    width: 100%;
+    display: flex;
+    .pack-txt{
+        text-align: left;
+        padding: 5%;
+        background: white;
+        width: 50%;
+        h3{
+            font-size: 1.3em;
+        }
+        p{
+            color: gray;
+            font-size: 0.9em;
+            line-height: 1.5em;
+            margin-bottom: 40px;
+        }
+    }
+    .bg-view-package{
+        background: url('../img/about-img.jpg') center/cover; 
+        width: 50%;
+    }
+}
+
+// section price
+.bg-map{
+    background: url('../img/price-bg.png') center/cover;
+    .pack-case{
+        background: white;
+        h3{
+            padding: 15px;
+        }
+        hr{
+            border: 0.5px solid #f8b600;
+            width: 85%;
+        }
+        .package-all{
+            width: 85%;
+            margin: 0 auto;
+            .destination-price-flex{
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                span{
+                    background: #f9f9ff;
+                    border: 1px solid #eee;
+                    padding: 8px 15px;
+                    font-size: 0.9em;
+                    cursor: pointer;
+                    transition: .2s all ease-in-out;
+                    &:hover{
+                        background: #f8b600;
+                        color: white;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: auto;
+}
+.swiper-slide {
+    padding-bottom: 100px;
+    text-align: left;
+}
+.swiper-container-v {
+    background: #eee;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #f8b600;
+  }
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 1px;
+}
+// swiper case photos
+.flex-3-contenu-swip{
+    .tag{
+        height: 30px;
+        margin-top: 30px;
+        a{
+            border: 1px solid #eee;
+            padding: 8px 15px;
+            font-size: 0.8em;
+            cursor: pointer;
+            z-index: 5;
+        }
+    }
+    p{
+        text-align: left;
+        line-height: 1.4em;
+    }
+    .date{
+        font-size: 0.9em;
+    }
+    h3{
+        color: black;
+        transition: .3s all ease-in-out;
+    }
+    div{
+        img{
+            transition: .3s all ease-in-out;
+        }
+        &:hover{
+            img{
+                transform: scale(1.08) rotate(-3deg);
+            }
+            h3{
+                color: #f8b600;
+            }
+        }
+    }
+}
+
