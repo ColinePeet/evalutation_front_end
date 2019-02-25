@@ -48,7 +48,7 @@ header{
         height: 100%;
     }
 }
-
+// nav top
 nav{
     position: absolute;
     z-index: 2;
@@ -59,7 +59,7 @@ nav{
        color: white; 
     }
 }
-
+// nav menu
 .menu{
     background: rgba($color: white, $alpha: 0.1);
     display: flex;
@@ -99,5 +99,18 @@ nav{
            margin-left: 10px; 
         }
         
+    }
+}
+// sticky menu
+.menu {
+    &.sticky{
+        position: fixed;
+        top: 0;
+        background: rgba($color: #131313, $alpha: 0.8);
+        bottom: auto;
+        margin: 0;
+        z-index: 10;
+        width: 100%;
+        padding: 15px 5%;
     }
 }

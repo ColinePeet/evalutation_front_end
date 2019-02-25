@@ -49,7 +49,48 @@
                 <button>get started</button>
             </div>
             <!-- petit formulaire -->
-            <div class="head-form"></div>
+            <div>
+                <nav><ul><li>flights</li>
+                <li>hotels</li>
+                <li>holidays</li></ul></nav>
+                <div class="head-form">
+                    <form action="" method="GET">
+                                    <!-- from -->
+                <div>
+                        <input type="text" name="nom" id="nom" autofocus placeholder="From" required>
+                    </div>
+                                <!-- to -->
+                <div>
+                        <input type="text" name="nom" id="nom" autofocus placeholder="To" required>
+                    </div>
+                                    <!-- start -->
+                <div>
+                        <input type="date" name="date" id="date" placeholder="Start" required>
+                    </div>
+                                <!-- return -->
+                <div>
+                        <input type="date" name="date" id="date" placeholder="Return" required>
+                    </div>
+                                <!-- adults -->
+                <div>
+                        <select id="country" name="country" placeholder="Adults" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                     <!-- Child -->
+                <div>
+                        <select id="country" name="country"  placeholder="Child" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <input type="submit" name="envoyer" id="envoyer" value="search flights">
+                    </form>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -460,6 +501,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/main.min.js"></script>
 </body>
 

@@ -1,5 +1,4 @@
 // swiper
-
 var swiperH = new Swiper('.swiper-container-h', {
   spaceBetween: 50,
   autoplay: {
@@ -12,3 +11,16 @@ var swiperH = new Swiper('.swiper-container-h', {
   },
 });
 
+// sticky menu
+let stickyNav = $('.menu').offset().top; 
+
+$(window).scroll(function() {
+    let scrollTop = $(window).scrollTop();  
+    if (scrollTop > stickyNav) { 
+        $('.menu').addClass('sticky');
+        $('.menu').removeClass('container');
+    } else {
+        $('.menu').removeClass('sticky'); 
+        $('.menu').addClass('container');
+    }
+});
