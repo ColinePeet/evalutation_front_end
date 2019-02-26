@@ -1,0 +1,130 @@
+footer{
+    background: #04091e;
+    color: rgb(185, 185, 185);
+    .foot-global{
+        display: flex;
+        padding: 50px 0;
+        justify-content: space-between;
+        .foot-section{
+            width: 20%;
+            h5{
+                text-transform: uppercase;
+                font-weight: 600;
+                color: white;
+                font-size: 0.9em;
+                margin-bottom: 40px;
+            }
+            div{
+                font-size: 0.8em;
+                line-height: 1.3em;
+                a{
+                    color: white;
+                    display: block;
+                    margin-top: 10px;
+                }
+                input{
+                    background: none;
+                    border: 1px solid gray;
+                    padding: 10px;
+                    margin-top: 20px;
+                }
+            }
+            .instafeed{
+                display: flex;
+                flex-wrap: wrap;
+                img{
+                    width: 56px;
+                    height: 58px;
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+// responsive
+@media (max-width: 1100px){
+    .foot-global{
+        display: flex;
+        flex-wrap: wrap;
+        .foot-section{
+            width: 50% !important;
+            padding: 5%;
+            h5{
+                text-transform: uppercase;
+                font-weight: 600;
+                color: white;
+                font-size: 0.9em;
+                margin-bottom: 40px;
+            }
+            div{
+                font-size: 0.8em;
+                line-height: 1.3em;
+                a{
+                    color: white;
+                    display: block;
+                    margin-top: 10px;
+                }
+                input{
+                    background: none;
+                    border: 1px solid gray;
+                    padding: 10px;
+                    margin-top: 20px;
+                }
+            }
+            .instafeed{
+                display: flex;
+                flex-wrap: wrap;
+                img{
+                    width: 56px;
+                    height: 58px;
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1100px){
+    .foot-global{
+        display: flex;
+        flex-wrap: wrap;
+        .foot-section{
+            width: 100% !important;
+            padding: 5%;
+            h5{
+                text-transform: uppercase;
+                font-weight: 600;
+                color: white;
+                font-size: 0.9em;
+                margin-bottom: 40px;
+            }
+            div{
+                font-size: 0.8em;
+                line-height: 1.3em;
+                a{
+                    color: white;
+                    display: block;
+                    margin-top: 10px;
+                }
+                input{
+                    background: none;
+                    border: 1px solid gray;
+                    padding: 10px;
+                    margin-top: 20px;
+                }
+            }
+            .instafeed{
+                display: flex;
+                flex-wrap: wrap;
+                img{
+                    width: 56px;
+                    height: 58px;
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}

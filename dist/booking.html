@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Travel</title>
+    <meta description="Un site de voyage">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- lien top  -->
+    <nav class="top-nav container">
+        <div class="left">
+            <a href="#">Visit Us</a><a href="#">Buy Tickets</a>
+        </div>
+        <!-- link social media -->
+        <div class="right"><a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+            <a href="#"><i class="fab fa-behance"></i></a>
+        </div>
+    </nav>
+    <!-- menu -->
+    <!-- menu -->
+    <nav class="menu container">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <ul class="full-menu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="booking.html">book your holidays</a></li>
+                <li><a href="package.html">packages</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <div class="burger">
+                    <span class="tranche-top"></span>
+                    <span class="tranche-center"></span>
+                    <span class="tranche-bottom"></span>
+            </div> 
+        </nav>
+    <!-- header booking page -->
+    <header>
+        <div class="head-pages">
+            <div class="book-head">
+                <h1>Book your holidays</h1>
+                <span>
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                    <a href="#">Book your holidays</a>
+                </span>
+            </div>
+        </div>
+    </header>
+    <!-- contenu booking page -->
+    <main>
+        <!-- section choose your destination -->
+        <section class="booking-contenu" id="ancre">
+            <h2>
+                Choose your destination
+            </h2>
+            <span>Your city trip is waiting for you</span>
+            <div id="app" class="container">
+                <h4 v-for="country in trips" :key="country.tripIndex" class="country-select">
+                    <a href="#ancre" @click="selectCountry(country.countryName)">{{country.countryName}}</a>
+                </h4> <br>
+                <span>
+                    You've chosen: {{selectedCountry}} <br> There are {{countryTrips.length}} city-trips available there
+                    !
+                </span>
+                <div class="column-trip">
+                    <div v-for="t in countryTrips" class="trip">
+                        <h4>{{t.tripName}}</h4>
+                        <img :src="t.tripPicture" alt="trip image">
+                        <button @click="addTrip(t)">
+                            Add to cart
+                        </button>
+                        <div><span class="price-trip">{{t.tripUnitPrice}}€</span> p/p</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- did not find ur package? -->
+        <article>
+            <div class="pack-txt">
+                <h3>Did not find your Package?
+                    Feel free to ask us.
+                    We‘ll make it for you</h3>
+                <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
+                    standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on
+                    the job is beyond reproach. inappropriate behavior is often laughed.</p>
+                <button class="black-button">request custom price</button>
+            </div>
+            <div class="bg-view-package"></div>
+        </article>
+
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container foot-global">
+            <div class="foot-section">
+                <h5>ABOUT AGENCY</h5>
+                <div>The world has become so fast paced that people don’t want to stand by reading a page of
+                    information,
+                    they would much rather look at a presentation and understand the message. It has come to a point
+                </div>
+            </div>
+            <div class="foot-section">
+                <h5>NAVIGATION LINKS</h5>
+                <div>
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="package.html">Package</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="foot-section">
+                <h5>NEWSLETTER</h5>
+                <div>For business professionals caught between high OEM price and mediocre print and graphic output
+                    <input type="text" name="email" placeholder="Email Adress">
+                </div>
+            </div>
+            <div class="foot-section">
+                <h5>INSTAFEED</h5>
+                <div class="instafeed">
+                    <img src="img/i1.jpg" alt="image instafeed">
+                    <img src="img/i2.jpg" alt="image instafeed">
+                    <img src="img/i3.jpg" alt="image instafeed">
+                    <img src="img/i4.jpg" alt="image instafeed">
+                    <img src="img/i5.jpg" alt="image instafeed">
+                    <img src="img/i6.jpg" alt="image instafeed">
+                    <img src="img/i7.jpg" alt="image instafeed">
+                    <img src="img/i8.jpg" alt="image instafeed">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/path/to/parallax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
